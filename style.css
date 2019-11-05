@@ -1,0 +1,104 @@
+body {
+    margin-top: 40px;
+    background: gray;
+    color: #fff;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align:center;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #f1f1f1
+
+}
+.container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+#columns {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #dadada;
+    margin:0 auto;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+#columns > li {
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    text-decoration:none;
+    width: 133px;
+    height: 133px;
+    background: #f1f1f1;
+    border: 2px solid gray;
+    border-right: 2px solid gray;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#columns > li.x {
+    font-size: 40px;
+    color: red;
+}
+
+#columns > li.o {
+    font-size: 40px;
+    color: black;
+}
+
+#columns > li:hover {
+    background: #f9f9f9;
+}
+
+#columns > li:active {
+    width: 133px;
+    height: 133px;
+    border: 3px gray;
+}
+
+#nfo {
+    text-align:center;
+    margin-top: 10px;
+}
+
+#whos-turn > span,
+#game-messages > span {
+    display: none;
+}
+
+#whos-turn.x span.x,
+#whos-turn.o span.o,
+#game-messages.player-x-win > span.player-x-win,
+#game-messages.player-o-win > span.player-o-win,
+#game-messages.draw > span.draw {
+    display: block;
+    margin-top: 10px;
+}
+
+#resetGame {
+    text-align: center;
+    border: none;
+    padding: 0.6em 1.2em;
+    background: seagreen;
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 2px;
+}
+
+#resetGame:hover {
+    background: #2c3e52;
+}
